@@ -13,9 +13,7 @@ public class CatchFallingPeople : MonoBehaviour {
 
 		GameObject catchedObject = collider.gameObject;
 
-		if (gameObject.tag == "Player") {
-
-			Debug.Log ("Player tag");
+		if (catchedObject.tag == "Player") {
 			catchedObject.transform.position = respawnTransform.position;
 		}
 	}
